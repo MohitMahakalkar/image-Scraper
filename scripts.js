@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showLoading();
 
         // Send a POST request to the backend
-        fetch('http://localhost:5005/search', {
+        fetch('/search', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var searchQuery = this.dataset.query;
 
         // Send a POST request to the backend to initiate download
-        fetch('http://localhost:5005/download', {
+        fetch('/download', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
